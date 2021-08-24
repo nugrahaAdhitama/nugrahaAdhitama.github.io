@@ -1,0 +1,106 @@
+
+* {
+  transition: all 0.3s ease-in-out;
+  box-sizing: border-box;
+}
+
+body {
+  background: #46A055;
+  display: grid;
+  place-items: center;
+}
+
+.container {
+  background: #fdfdfd;
+  border-radius: 15px;
+  max-height: 100%;
+  width: 90vw;
+  margin: 0 auto;
+}
+
+.card {
+  max-width: 80vw;
+  margin: 0 auto;
+}
+
+.cover-content {
+  display: flex;
+  justify-content: center;
+  flex-direction: row-reverse;
+  align-items: center;
+  padding: 1em;
+  margin-bottom: 50px;
+}
+
+.card-content {
+  display: flex;
+  justify-content: center;
+  flex-direction: row-reverse;
+  align-items: center;
+  padding: 1em;
+  opacity: 0;
+  position: relative;
+  transform: scale(1.3);
+  transform: translateY(150px);
+  transition: all 0.5s ease-in-out;
+  overflow: hidden;
+  margin-bottom: 50px;
+}
+
+.two {
+  flex-direction: row!important;
+}
+
+.three {
+  flex-direction: row-reverse!important;
+}
+
+.four {
+  flex-direction: row!important;
+}
+
+.card-content figure,
+.card-content section {
+  width: 60vw;
+  height: 60vh; 
+  margin: 5px; 
+}
+
+.is-showing {
+  opacity: 1;
+  transform: scale(1);
+  transform: translateY(0px);
+}
+
+.birthday {
+  max-height: 60vh;
+}
+
+.space {
+  height: 100px;
+  margin-bottom: 50px;
+}
+
+.text h1 {
+  font-weight: bold;
+  font-size: 4vw;
+}
+
+.text p {
+  font-size: 1.3vw;
+}
+
+.muted {
+  opacity: 0.8;
+}
+
+.large-windows {
+  height: 400px;
+  background-image: url(img/Twice\ TT.jpg);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  border-radius: 20%;
+}
